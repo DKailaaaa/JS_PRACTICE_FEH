@@ -13,6 +13,7 @@
 <details ontoggle="message()">
 	<summary>Instructions</summary>
 		<i>Enter two numbers then find its sum.</i>
+		<i>Enter two numbers then find its difference.</i>
 </details>
 
 <br>
@@ -23,6 +24,8 @@
 	<br>
 
 	<button type="Submit" class="btn btn-success" onmouseover="plus()"> Calculate </button>
+	<button type="Submit" class="btn btn-dark" onmouseover="minus()"> Minus </button>
+
 
 	<a href="index.html"><button class="btn btn-primary">Refresh</button></a>
 
@@ -41,6 +44,20 @@
 
 			document.getElementById('Result').innerHTML= 'Answer is' + '  ' + sum;
 		}
+
+		function message(){
+			alert("Try it");
+			//You may use innerHTML in line 31
+		}
+
+		function minus(){
+			var num1 = document.getElementById("num1").value;
+			var num2 = document.getElementById("num2").value;
+			var difference = Number(num1) - Number(num2);
+
+			document.getElementById('Result').innerHTML= 'Answer is' + '  ' + difference;
+		}
+
 
 		function message(){
 			alert("Try it");
